@@ -1,4 +1,15 @@
 
+
+body{
+  background-color: $main-background-color;
+}
+
 h1{
-  color:yellow;
+  background-color: $logo-background-color;
+  padding: 0.2em;
+  color: white;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 3em;
+  letter-spacing: 0.1em;
 }

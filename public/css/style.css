@@ -1,4 +1,194 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .row [class*=col-] {
+  min-height: 1px;
+  width: 100%;
+  padding: 12px;
+}
+.container .row .col-1 {
+  width: 100%;
+}
+@media (min-width: 550px) {
+  .container .row .col-1 {
+    width: 8.3333333333%;
+  }
+}
+.container .row .col-2 {
+  width: 100%;
+}
+@media (min-width: 550px) {
+  .container .row .col-2 {
+    width: 16.6666666667%;
+  }
+}
+.container .row .col-3 {
+  width: 100%;
+}
+@media (min-width: 550px) {
+  .container .row .col-3 {
+    width: 25%;
+  }
+}
+.container .row .col-4 {
+  width: 100%;
+}
+@media (min-width: 550px) {
+  .container .row .col-4 {
+    width: 33.3333333333%;
+  }
+}
+.container .row .col-5 {
+  width: 100%;
+}
+@media (min-width: 550px) {
+  .container .row .col-5 {
+    width: 41.6666666667%;
+  }
+}
+.container .row .col-6 {
+  width: 100%;
+}
+@media (min-width: 550px) {
+  .container .row .col-6 {
+    width: 50%;
+  }
+}
+.container .row .col-7 {
+  width: 100%;
+}
+@media (min-width: 550px) {
+  .container .row .col-7 {
+    width: 58.3333333333%;
+  }
+}
+.container .row .col-8 {
+  width: 100%;
+}
+@media (min-width: 550px) {
+  .container .row .col-8 {
+    width: 66.6666666667%;
+  }
+}
+.container .row .col-9 {
+  width: 100%;
+}
+@media (min-width: 550px) {
+  .container .row .col-9 {
+    width: 75%;
+  }
+}
+.container .row .col-10 {
+  width: 100%;
+}
+@media (min-width: 550px) {
+  .container .row .col-10 {
+    width: 83.3333333333%;
+  }
+}
+.container .row .col-11 {
+  width: 100%;
+}
+@media (min-width: 550px) {
+  .container .row .col-11 {
+    width: 91.6666666667%;
+  }
+}
+.container .row .col-12 {
+  width: 100%;
+}
+@media (min-width: 550px) {
+  .container .row .col-12 {
+    width: 100%;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 h1 {
-  color: red;
+  font-family: "Oleo Script", cursive;
+}
+
+body {
+  background-color: #E4E4E4;
+}
+
+h1 {
+  background-color: #FC4887;
+  padding: 0.2em;
+  color: white;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 3em;
+  letter-spacing: 0.1em;
 }
 /*# sourceMappingURL=style.css.map */
