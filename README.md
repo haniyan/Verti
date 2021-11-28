@@ -11,10 +11,16 @@ Responsive side
 
 - setup catalog structure
   - public
-  - style.scss
-  - _grid.scss
-  - _reset.scss
-  - _custom.scss
+         css
+         assets
+         images
+  - src
+         styles
+            - 'style.scss'
+            - '_grid.scss'
+            - '_reset.scss'
+            - '_custom.scss'
 - commit ready configuration
+- add 'assets' and 'images' to './public'
 
   
