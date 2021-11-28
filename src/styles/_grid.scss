@@ -1,13 +1,13 @@
 // our own grid
 .container {
   width: 100%;
-  max-width: 990px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  //padding: 0 15px;
   .row {
     display: flex;
     flex-wrap: wrap;
-    $columns: 12;
+    $columns: 3;
     $column-base-width: 100% / $columns;
     [class*='col-']{
       min-height: 1px;

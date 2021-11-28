@@ -69,9 +69,8 @@ button {
 
 .container {
   width: 100%;
-  max-width: 990px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 .container .row {
   display: flex;
@@ -87,7 +86,7 @@ button {
 }
 @media (min-width: 550px) {
   .container .row .col-1 {
-    width: 8.3333333333%;
+    width: 33.3333333333%;
   }
 }
 .container .row .col-2 {
@@ -95,7 +94,7 @@ button {
 }
 @media (min-width: 550px) {
   .container .row .col-2 {
-    width: 16.6666666667%;
+    width: 66.6666666667%;
   }
 }
 .container .row .col-3 {
@@ -103,78 +102,6 @@ button {
 }
 @media (min-width: 550px) {
   .container .row .col-3 {
-    width: 25%;
-  }
-}
-.container .row .col-4 {
-  width: 100%;
-}
-@media (min-width: 550px) {
-  .container .row .col-4 {
-    width: 33.3333333333%;
-  }
-}
-.container .row .col-5 {
-  width: 100%;
-}
-@media (min-width: 550px) {
-  .container .row .col-5 {
-    width: 41.6666666667%;
-  }
-}
-.container .row .col-6 {
-  width: 100%;
-}
-@media (min-width: 550px) {
-  .container .row .col-6 {
-    width: 50%;
-  }
-}
-.container .row .col-7 {
-  width: 100%;
-}
-@media (min-width: 550px) {
-  .container .row .col-7 {
-    width: 58.3333333333%;
-  }
-}
-.container .row .col-8 {
-  width: 100%;
-}
-@media (min-width: 550px) {
-  .container .row .col-8 {
-    width: 66.6666666667%;
-  }
-}
-.container .row .col-9 {
-  width: 100%;
-}
-@media (min-width: 550px) {
-  .container .row .col-9 {
-    width: 75%;
-  }
-}
-.container .row .col-10 {
-  width: 100%;
-}
-@media (min-width: 550px) {
-  .container .row .col-10 {
-    width: 83.3333333333%;
-  }
-}
-.container .row .col-11 {
-  width: 100%;
-}
-@media (min-width: 550px) {
-  .container .row .col-11 {
-    width: 91.6666666667%;
-  }
-}
-.container .row .col-12 {
-  width: 100%;
-}
-@media (min-width: 550px) {
-  .container .row .col-12 {
     width: 100%;
   }
 }
@@ -206,7 +133,7 @@ header {
 }
 @media screen and (min-width: 1250px) {
   header {
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
   }
 }
@@ -255,7 +182,7 @@ header .menu .menu__link {
 }
 @media screen and (min-width: 1250px) {
   .welcome {
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
   }
 }
@@ -309,5 +236,52 @@ header .menu .menu__link {
   color: #444444;
   font-weight: 900;
   font-size: 2em;
+}
+
+.portfolio {
+  margin-top: 2.25em;
+}
+@media screen and (min-width: 1000px) {
+  .portfolio {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .portfolio {
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+}
+.portfolio .project {
+  border-radius: 6px;
+  background-color: white;
+  margin-top: 2em;
+}
+@media screen and (min-width: 1000px) {
+  .portfolio .project {
+    margin: 1em 0 1.5em 1.5em;
+  }
+  .portfolio .project:first-child {
+    margin-left: 0;
+  }
+}
+.portfolio .project .project__thumbnail {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+.portfolio .project .project__content {
+  padding: 2em;
+}
+.portfolio .project .project__title {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+.portfolio .project .project__description {
+  line-height: 2em;
+}
+.portfolio .project .project__tags {
+  margin: 1em 0;
 }
 /*# sourceMappingURL=style.css.map */
