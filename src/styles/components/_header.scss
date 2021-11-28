@@ -1,0 +1,51 @@
+header {
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include tablet {
+    justify-content: space-between;
+    height: 20vh;
+  }
+  @include desktop;
+
+  .logo {
+    background-color: $logo-background-color;
+    padding: 0.2em;
+    color: white;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 2.25em;
+    letter-spacing: 0.1em;
+  }
+
+  .menu {
+    display: none; //robimy mobile first
+    @include tablet {
+      display: flex;
+    }
+
+
+    .menu_item {
+      padding: 0.5em 2em;
+      margin: 0.5em 2em;
+      background-color: white;
+      border-radius: 0.5em;
+    }
+
+    .menu__item--featured {
+      background-color: $main-text-color;
+      color: white;
+
+      a {
+        color: white;
+      }
+    }
+
+    .menu__link {
+      text-decoration: none;
+      color: $main-text-color;
+      font-weight: bold;
+    }
+  }
+}

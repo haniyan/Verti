@@ -180,15 +180,65 @@ h1 {
 
 body {
   background-color: #E4E4E4;
+  color: #444444;
+}
+@media (min-width: 1000px) {
+  body {
+    padding: 1em;
+  }
 }
 
-h1 {
+header {
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1000px) {
+  header {
+    justify-content: space-between;
+    height: 20vh;
+  }
+}
+@media screen and (min-width: 1250px) {
+  header {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+header .logo {
   background-color: #FC4887;
   padding: 0.2em;
   color: white;
   display: inline-block;
   border-radius: 5px;
-  font-size: 3em;
+  font-size: 2.25em;
   letter-spacing: 0.1em;
+}
+header .menu {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  header .menu {
+    display: flex;
+  }
+}
+header .menu .menu_item {
+  padding: 0.5em 2em;
+  margin: 0.5em 2em;
+  background-color: white;
+  border-radius: 0.5em;
+}
+header .menu .menu__item--featured {
+  background-color: #444444;
+  color: white;
+}
+header .menu .menu__item--featured a {
+  color: white;
+}
+header .menu .menu__link {
+  text-decoration: none;
+  color: #444444;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
