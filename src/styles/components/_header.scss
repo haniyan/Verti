@@ -1,11 +1,10 @@
 header {
-  height: 35vh;
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   @include tablet {
     justify-content: space-between;
-    height: 20vh;
   }
   @include desktop;
 
@@ -15,8 +14,9 @@ header {
     color: white;
     display: inline-block;
     border-radius: 5px;
-    font-size: 2.25em;
+    font-size: 2.5em;
     letter-spacing: 0.1em;
+
   }
 
   .menu {

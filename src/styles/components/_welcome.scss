@@ -1,0 +1,65 @@
+.welcome {
+  margin-top: 2em;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 3px 0 0 rgb(0 0 0/ 5%);
+  padding: 3em;
+  @include desktop;
+
+  @include tablet {
+    display: flex;
+
+  }
+
+  .welcome__content {
+    @include tablet {
+      width: 180%;
+    }
+
+    .welcome__title {
+      padding: 1em 2em;
+      color: $main-text-color;
+      font-size: 3.5em;
+      text-align: center;
+      @include tablet {
+        text-align: left;
+        padding: 0.25em;
+      }
+    }
+
+    .welcome__description {
+      font-size: 2.75em;
+      text-align: center;
+      padding: 0.5em 0;
+      line-height: 2em;
+      @include tablet {
+        text-align: left;
+        padding: 0.25em;
+      }
+    }
+  }
+
+  .welcome__actions {
+
+    @include tablet {
+      width: 100%;
+    }
+
+    .welcome__cta {
+      background-color: $border-buttons-color;
+      color: white;
+      font-weight: 900;
+      font-size: 2em;
+    }
+
+    .welcome__more {
+      background-color: $main-background-color;
+      color: $main-text-color;
+      font-weight: 900;
+      font-size: 2em;
+    }
+
+  }
+
+
+}
