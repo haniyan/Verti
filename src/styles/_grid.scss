@@ -1,0 +1,26 @@
+// our own grid
+.container {
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 0 15px;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    $columns: 12;
+    $column-base-width: 100% / $columns;
+    [class*='col-']{
+      min-height: 1px;
+      width: 100%;
+      padding: 12px;
+    }
+    @for $i from 1 through $columns {
+      .col-#{$i} {
+        width: 100%;
+        @media (min-width: 550px) {
+          width: $column-base-width * $i;
+        }
+      }
+    }
+  }
+}
