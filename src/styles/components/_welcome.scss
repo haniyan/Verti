@@ -8,7 +8,6 @@
 
   @include tablet {
     display: flex;
-
   }
 
   .welcome__content {
@@ -50,6 +49,7 @@
       color: white;
       font-weight: 900;
       font-size: 2em;
+
     }
 
     .welcome__more {
@@ -57,9 +57,24 @@
       color: $main-text-color;
       font-weight: 900;
       font-size: 2em;
+      //margin-top: 0.5em; trzeba rozdzielić przyciski jakos
+    }
+
+    .welcome__cta, .welcome__more{
+      @include desktop{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      @include tablet {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+      }
     }
 
   }
-
-
 }

@@ -237,6 +237,24 @@ header .menu .menu__link {
   font-weight: 900;
   font-size: 2em;
 }
+@media screen and (min-width: 1250px) {
+  .welcome .welcome__actions .welcome__cta, .welcome .welcome__actions .welcome__more {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .welcome .welcome__actions .welcome__cta, .welcome .welcome__actions .welcome__more {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 .portfolio {
   margin-top: 2.25em;
