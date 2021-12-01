@@ -11,3 +11,17 @@
     @content;
   }
 }
+
+@mixin details-btn{
+  background-color: $border-buttons-color;
+  color: white;
+  font-weight: 900;
+  font-size: 1.25em;
+  margin-top: 2em;
+  @media screen and (min-width: 1250px){
+    max-width: 1250px;
+    margin: 0 auto;
+    @content;
+  }
+
+}

@@ -1,0 +1,62 @@
+.details {
+  margin-top: 4.5em;
+  background-color: white;
+  width: 100%;
+
+  .details__content {
+    padding: 2em;
+    //  atmedia flex
+
+    padding-top: 3em;
+
+    .details__description {
+      .description__title {
+        font-size: 2em;
+        color: $main-text-color;
+      }
+
+      .description__info {
+        padding-top: 2em;
+        color: $second-text-color;
+        line-height: 2em;
+      }
+
+      .continue__cta {
+        @include details-btn;
+      }
+
+    }
+
+    .details__gallery {
+      margin-top: 6em;
+
+      .gallery__title {
+        color: $main-text-color;
+        font-size: 1.25em;
+        margin-bottom: 1.5em;
+      }
+
+      .gallery__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .gallery__thumbnail {
+          width: 49%;
+          border-radius: 10px;
+          margin: 0.4em 0;
+
+        }
+      }
+
+      .more__cta {
+        @include details-btn;
+      }
+
+    }
+
+
+  }
+
+
+}

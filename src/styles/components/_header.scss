@@ -20,7 +20,7 @@ header {
   }
 
   .menu {
-    display: none; //robimy mobile first
+    display: none; // mobile first
     @include tablet {
       display: flex;
     }
