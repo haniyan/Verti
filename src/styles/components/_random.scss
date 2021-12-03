@@ -1,0 +1,77 @@
+.random {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .random-section {
+    @include tablet {
+      width: 50%;
+    }
+  }
+
+  .random-tittle {
+    margin: 2.5em auto;
+    padding-top: 2.5em;
+    font-size: 1em;
+    font-weight: 900;
+    color: $main-text-color;
+
+  }
+
+  .random_list {
+    .list_item {
+
+      .item_link {
+        text-decoration: underline;
+        color: $second-text-color;
+        line-height: 1.5em;
+      }
+
+    }
+
+  }
+
+  .contact {
+    @include tablet {
+      padding-top: 2.5em;
+    }
+
+    .contact-tittle {
+      margin-top: 2.5em;
+      margin-bottom: 2.0em;
+      font-size: 1em;
+      font-weight: 900;
+      color: $main-text-color;
+    }
+
+    .socialmedia {
+      width: 30%;
+      display: flex;
+      justify-content: flex-start;
+
+      .socialmedia_icon {
+        background-color: $main-text-color;
+        margin: 0 0.5em 1.5em auto;
+        border-radius: 6px;
+
+        .icon {
+          color: white;
+          font-size: 1.5em;
+        }
+      }
+    }
+
+    .address {
+      line-height: 2em;
+      margin-bottom: 3em;
+    }
+  }
+}

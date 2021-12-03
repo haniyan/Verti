@@ -1,27 +1,41 @@
-@mixin tablet{
-  @media screen and (min-width: 1000px){
+@mixin tablet {
+  @media screen and (min-width: 1000px) {
     @content;
   }
 }
 
-@mixin desktop{
-  @media screen and (min-width: 1250px){
+@mixin desktop {
+  @media screen and (min-width: 1250px) {
     max-width: 1250px;
     margin: 0 auto;
     @content;
   }
 }
 
-@mixin details-btn{
+@mixin details-btn {
   background-color: $border-buttons-color;
   color: white;
   font-weight: 900;
   font-size: 1.25em;
   margin-top: 2em;
-  @media screen and (min-width: 1250px){
+  @media screen and (min-width: 1250px) {
     max-width: 1250px;
     margin: 0 auto;
     @content;
   }
 
+}
+
+//@mixin hamburger-line{
+//  content: "";
+//  width: 100%;
+//  height: 1em;
+//  background-color: white;
+//  position: absolute;
+//
+//}
+
+@mixin random-section {
+  @content;
+  margin-top: 2.5em;
 }
